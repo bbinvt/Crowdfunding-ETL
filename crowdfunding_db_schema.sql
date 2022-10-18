@@ -7,22 +7,22 @@ description text
 goal numeric(10,2)
 pledged numeric(10,2)
 outcome varchar(50)
-backers_count 
+backers_count int
 country varchar(10)
 currency varchar(10)
 launch_date date
 end_date date
 category_id varchar(10) FK >- category.category_id 
-subcategory_id archar(10) FK >- subcategory.subcategory_id
+subcategory_id varchar(10) FK >- subcategory.subcategory_id
 
 category
 -
-category_id int PK
+category_id varchar(10) PK
 category_name varchar(50)
 
 subcategory
 -
-subcategory_id int PK
+subcategory_id varchar(10) PK
 subcategory_name varchar(50)
 
 contacts
